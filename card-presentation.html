@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- METADATOS BÁSICOS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUFETE MONTERROSO & SAYLE</title>
+  <meta name="description" content="Firma de abogadas con más de 25 años de experiencia brindando asesoría legal ética y profesional en Guatemala.">
+
+  <!-- OPEN GRAPH PARA COMPARTIR EN REDES -->
+  <meta property="og:title" content="BUFETE MONTERROSO & SAYLE">
+  <meta property="og:description" content="Servicios legales de alta calidad, defensa del contribuyente, propiedad intelectual y más.">
+  <meta property="og:image" content="assets/img/1200x630.png">
+  <meta property="og:url" content="https://mosaabogadosgt.com/">
+  <meta property="og:type" content="website">
+
+  <!-- ICONOS E ICON FONT -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./card-presentation-assets/assets/img/favicon.png" type="image/x-icon">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #132b1e;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .profile {
+      text-align: center;
+    }
+
+    .profile_border {
+      display: inline-block;
+      border-radius: 50%;
+      padding: 8px;
+      margin-bottom: 20px;
+    }
+
+    .profile_perfil img {
+      width: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile_name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #c49a5a;
+      margin: 0;
+    }
+
+    .profile_profession {
+      margin: 0;
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    .profile_social {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .profile_social-link {
+      font-size: 1.5rem;
+      color: #c49a5a;
+      text-decoration: none;
+    }
+
+    .profile_info {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .profile_info-group h3 {
+      color: #c49a5a;
+      margin: 0;
+    }
+
+    .profile_info-description {
+      margin: 0;
+      font-size: 14px;
+      color: #ccc;
+      text-align: center;
+    }
+
+    .profile_buttons {
+      margin-top: 2rem;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: #c49a5a;
+      color: #0e2216;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #b5894f;
+    }
+
+    .button_small {
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+
+    .button_gray {
+      background-color: #fff;
+      color: #0e2216;
+    }
+
+    .filters_content {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      padding: 0;
+    }
+
+    .filters_button {
+      background: none;
+      border: none;
+      color: #c49a5a;
+      font-size: 18px;
+      padding: 0.5rem 1rem;
+      cursor: default;
+      border-bottom: 2px solid #c49a5a;
+    }
+
+    .filters_sections {
+      margin-top: 2rem;
+    }
+
+    .skills_area {
+      background-color: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .skills_title {
+      color: #c49a5a;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .skills_group {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .skills_group {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .skills_data {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .skills_name {
+      font-size: 16px;
+      margin: 0;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .skills_level {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      color: #c49a5a;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="profile container">
+    <div class="profile_border">
+      <div class="profile_perfil">
+        <img src="assets/img/512x512-solo-logo.png" alt="Logo Bufete">
+      </div>
+    </div>
+    <h2 class="profile_name">BUFETE MONTERROSO & SAYLE</h2>
+    <h3 class="profile_profession">Firma legal con más de 25 años de experiencia</h3>
+
+    <ul class="profile_social">
+      <li><a href="https://api.whatsapp.com/send?phone=50242151305" class="profile_social-link"><i class="ri-whatsapp-line"></i></a></li>
+      <li><a href="mailto:info@mosaabogadosgt.com" class="profile_social-link"><i class="ri-mail-line"></i></a></li>
+    </ul>
+
+    <div class="profile_info">
+      <div class="profile_info-group">
+        <h3>+25</h3>
+        <p class="profile_info-description">Años de experiencia</p>
+      </div>
+      <div class="profile_info-group">
+        <h3>6</h3>
+        <p class="profile_info-description">Áreas jurídicas</p>
+      </div>
+      <div class="profile_info-group">
+        <h3>100%</h3>
+        <p class="profile_info-description">Compromiso ético</p>
+      </div>
+    </div>
+
+    <div class="profile_buttons">
+      <a href="https://api.whatsapp.com/send?phone=50242151305" class="button button_gray">
+        Contactar vía WhatsApp <i class="ri-whatsapp-line"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="main container">
+    <ul class="filters_content">
+      <li><button class="filters_button">Áreas Legales</button></li>
+    </ul>
+
+    <div class="filters_sections">
+      <div class="skills_area">
+        <h3 class="skills_title">Áreas de Práctica Jurídica</h3>
+        <div class="skills_group">
+          <div class="skills_data">
+            <i class="ri-checkbox-circle-line" style="color:#c49a5a;"></i>
+            <div>
+              <h4 class="skills_name">Defensa del Contribuyente</h4>
+              <span class="skills_level">Administrativa, Penal y Constitucional</span>
+            </div>
+          </div>
+
+          <div class="skills_data">
+            <i class="ri-checkbox-circle-line" style="color:#c49a5a;"></i>
+            <div>
+              <h4 class="skills_name">Propiedad Intelectual</h4>
+              <span class="skills_level">Ámbito administrativo, judicial e internacional</span>
+            </div>
+          </div>
+
+          <div class="skills_data">
+            <i class="ri-checkbox-circle-line" style="color:#c49a5a;"></i>
+            <div>
+              <h4 class="skills_name">Propiedad Industrial</h4>
+              <span class="skills_level">Protección ante registros y conflictos</span>
+            </div>
+          </div>
+
+          <div class="skills_data">
+            <i class="ri-checkbox-circle-line" style="color:#c49a5a;"></i>
+            <div>
+              <h4 class="skills_name">Procesos Mercantiles</h4>
+              <span class="skills_level">Conflictos comerciales, judiciales y administrativos</span>
+            </div>
+          </div>
+
+          <div class="skills_data">
+            <i class="ri-checkbox-circle-line" style="color:#c49a5a;"></i>
+            <div>
+              <h4 class="skills_name">Competitividad</h4>
+              <span class="skills_level">Litigios, defensa y normativas</span>
+            </div>
+          </div>
+
+          <div class="skills_data">
+            <i class="ri-checkbox-circle-line" style="color:#c49a5a;"></i>
+            <div>
+              <h4 class="skills_name">Asesoría Legal General</h4>
+              <span class="skills_level">Consultoría profesional y soluciones jurídicas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    © BUFETE MONTERROSO & SAYLE. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
