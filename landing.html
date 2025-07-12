@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bufete Monterroso Sayle & Asociados</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom fonts or additional styles can be added here */
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="#" class="font-serif font-semibold text-lg text-[#d4af37]">BUFETE MONTERROSO SAYLE & ASOCIADOS</a>
+      <button id="nav-toggle" class="md:hidden text-gray-300 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <nav id="nav-menu" class="hidden md:flex space-x-6">
+        <a href="#inicio" class="hover:text-[#d4af37] transition-colors">Inicio</a>
+        <a href="#sobre" class="hover:text-[#d4af37] transition-colors">Sobre Nosotros</a>
+        <a href="#servicios" class="hover:text-[#d4af37] transition-colors">Servicios</a>
+        <a href="#articulos" class="hover:text-[#d4af37] transition-colors">Artículos</a>
+        <a href="#contacto" class="hover:text-[#d4af37] transition-colors">Contacto</a>
+      </nav>
+    </div>
+    <nav id="mobile-menu" class="md:hidden hidden bg-gray-900 border-t border-gray-700">
+      <div class="px-4 py-2 flex flex-col space-y-1">
+        <a href="#inicio" class="block py-2 hover:text-[#d4af37]">Inicio</a>
+        <a href="#sobre" class="block py-2 hover:text-[#d4af37]">Sobre Nosotros</a>
+        <a href="#servicios" class="block py-2 hover:text-[#d4af37]">Servicios</a>
+        <a href="#articulos" class="block py-2 hover:text-[#d4af37]">Artículos</a>
+        <a href="#contacto" class="block py-2 hover:text-[#d4af37]">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="relative h-screen flex items-center bg-cover bg-center" style="background-image:url('assets/img/hero/upscayl_png_ultrasharp-4x_4x/7.png');">
+    <div class="absolute inset-0 bg-gradient-to-l from-black via-black/60 to-transparent"></div>
+    <div class="relative z-10 max-w-xl mx-4 sm:ml-12 text-white">
+      <h1 class="font-serif text-4xl md:text-5xl mb-4">Protegemos Tus Derechos con Excelencia</h1>
+      <p class="mb-6">Más de 25 años brindando asesoría jurídica integral a empresas y particulares…</p>
+      <div class="space-x-4">
+        <a href="#contacto" class="inline-block bg-[#d4af37] text-black font-medium py-2 px-4 rounded hover:bg-yellow-500 transition-colors">Agenda tu Consulta</a>
+        <a href="#servicios" class="inline-block border border-[#d4af37] text-[#d4af37] py-2 px-4 rounded hover:bg-[#d4af37] hover:text-black transition-colors">Ver Servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="sobre" class="bg-gray-900 text-white py-16 text-center px-4">
+    <h2 class="font-serif text-3xl text-[#d4af37] mb-6">¿Quiénes Somos?</h2>
+    <p class="max-w-2xl mx-auto">En Bufete Monterroso Sayle &amp; Asociados contamos con más de 25 años de experiencia brindando asesoría legal ética y profesional en Guatemala. Nuestro compromiso es defender tus derechos con integridad y excelencia.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="servicios" class="py-16 bg-gray-800 text-white">
+    <h2 class="font-serif text-3xl text-center text-[#d4af37] mb-10">Productos y Servicios</h2>
+    <div class="grid gap-8 px-4 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-gray-900 p-6 rounded flex flex-col justify-between">
+        <div>
+          <h3 class="font-serif text-xl text-[#d4af37] mb-4">Servicios Jurídicos</h3>
+          <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Asesoría legal</li>
+            <li>Acompañamiento jurídico</li>
+            <li>Orientación legal</li>
+          </ul>
+        </div>
+        <a href="#contacto" class="self-start border border-[#d4af37] text-[#d4af37] px-4 py-2 rounded hover:bg-[#d4af37] hover:text-black transition-colors">Solicitar Información</a>
+      </div>
+      <div class="bg-gray-900 p-6 rounded flex flex-col justify-between">
+        <div>
+          <h3 class="font-serif text-xl text-[#d4af37] mb-4">Defensa del Contribuyente</h3>
+          <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Administrativa</li>
+            <li>Constitucional</li>
+            <li>Penal</li>
+          </ul>
+        </div>
+        <a href="#contacto" class="self-start border border-[#d4af37] text-[#d4af37] px-4 py-2 rounded hover:bg-[#d4af37] hover:text-black transition-colors">Solicitar Información</a>
+      </div>
+      <div class="bg-gray-900 p-6 rounded flex flex-col justify-between">
+        <div>
+          <h3 class="font-serif text-xl text-[#d4af37] mb-4">Propiedad Intelectual</h3>
+          <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Área administrativa</li>
+            <li>Judicial e Internacional</li>
+          </ul>
+        </div>
+        <a href="#contacto" class="self-start border border-[#d4af37] text-[#d4af37] px-4 py-2 rounded hover:bg-[#d4af37] hover:text-black transition-colors">Solicitar Información</a>
+      </div>
+      <div class="bg-gray-900 p-6 rounded flex flex-col justify-between">
+        <div>
+          <h3 class="font-serif text-xl text-[#d4af37] mb-4">Propiedad Industrial</h3>
+          <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Área administrativa</li>
+            <li>Judicial e Internacional</li>
+          </ul>
+        </div>
+        <a href="#contacto" class="self-start border border-[#d4af37] text-[#d4af37] px-4 py-2 rounded hover:bg-[#d4af37] hover:text-black transition-colors">Solicitar Información</a>
+      </div>
+      <div class="bg-gray-900 p-6 rounded flex flex-col justify-between">
+        <div>
+          <h3 class="font-serif text-xl text-[#d4af37] mb-4">Procesos Mercantiles</h3>
+          <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Resolución de conflictos</li>
+            <li>Administrativos</li>
+            <li>Judiciales</li>
+          </ul>
+        </div>
+        <a href="#contacto" class="self-start border border-[#d4af37] text-[#d4af37] px-4 py-2 rounded hover:bg-[#d4af37] hover:text-black transition-colors">Solicitar Información</a>
+      </div>
+      <div class="bg-gray-900 p-6 rounded flex flex-col justify-between">
+        <div>
+          <h3 class="font-serif text-xl text-[#d4af37] mb-4">Competitividad</h3>
+          <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Área administrativa</li>
+            <li>Judicial</li>
+          </ul>
+        </div>
+        <a href="#contacto" class="self-start border border-[#d4af37] text-[#d4af37] px-4 py-2 rounded hover:bg-[#d4af37] hover:text-black transition-colors">Solicitar Información</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles placeholder -->
+  <section id="articulos" class="py-16 bg-gray-100 text-gray-900 text-center">
+    <h2 class="font-serif text-3xl text-[#d4af37] mb-6">Artículos Recientes</h2>
+    <p class="max-w-2xl mx-auto">Contenido próximamente…</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contacto" class="bg-gray-900 text-white py-16 text-center px-4">
+    <h2 class="font-serif text-3xl text-[#d4af37] mb-6">Contáctanos</h2>
+    <p class="mb-6">Teléfono: <a href="tel:+50242151305" class="hover:text-[#d4af37]">+502 4215 1305</a></p>
+    <a href="mailto:info@bufete.com" class="inline-block bg-[#d4af37] text-black font-medium py-2 px-4 rounded hover:bg-yellow-500 transition-colors">Enviar Correo</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8 text-center">
+    <p class="mb-4">&copy; 2025 Bufete Monterroso Sayle &amp; Asociados. Todos los derechos reservados.</p>
+    <div class="space-x-4 mb-4">
+      <a href="#" class="hover:text-[#d4af37]">Aviso Legal</a>
+      <a href="#" class="hover:text-[#d4af37]">Política de Privacidad</a>
+    </div>
+    <div class="flex justify-center space-x-6">
+      <a href="#" aria-label="Facebook" class="hover:opacity-80">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter" class="hover:opacity-80">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+      </a>
+      <a href="#" aria-label="LinkedIn" class="hover:opacity-80">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
