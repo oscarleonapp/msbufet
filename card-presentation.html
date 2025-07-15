@@ -104,6 +104,7 @@
     .button {
       padding: 10px 20px;
       border: none;
+      margin-left: 20px;
       border-radius: 6px;
       background-color: #c49a5a;
       color: #0e2216;
@@ -202,6 +203,25 @@
       color: #c49a5a;
       font-size: 14px;
     }
+    @keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7); /* Adjust color as needed */
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(0, 123, 255, 0); /* Adjust color as needed */
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0); /* Adjust color as needed */
+  }
+}
+
+.button.pulse {
+  animation: pulse 2s infinite;
+}
+
   </style>
 </head>
 
@@ -237,18 +257,22 @@
     </div>
 
     <div class="profile_buttons">
+<a href="https://mosaabogadosgt.com/" class="button button_gray pulse">
+  Áreas Legales</i>
+</a>
+
       <a href="https://api.whatsapp.com/send?phone=50242151305" class="button button_gray">
-        Contactar vía WhatsApp <i class="ri-whatsapp-line"></i>
+        WhatsApp <i class="ri-whatsapp-line"></i>
       </a>
     </div>
   </header>
 
   <main class="main container">
-    <ul class="filters_content">
+    <!-- <ul class="filters_content">
       <li><button class="filters_button">Áreas Legales</button></li>
-    </ul>
+    </ul> -->
 
-    <div class="filters_sections">
+    <!-- <div class="filters_sections">
       <div class="skills_area">
         <h3 class="skills_title">Áreas de Práctica Jurídica</h3>
         <div class="skills_group">
@@ -301,7 +325,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </main>
 
   <footer class="footer">
