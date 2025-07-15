@@ -1,279 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Life Coach - Rose William</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      color: #333;
-      background-color: #fffaf8;
-      line-height: 1.6;
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-      background-color: #fff;
-      border-bottom: 1px solid #eee;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      color: #e86a33;
-    }
-
-    nav ul {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      list-style: none;
-      padding-left: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-
-    .btn-primary {
-      background-color: #e86a33;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1rem;
-      background: linear-gradient(135deg, #fffaf8 60%, #eee 100%);
-    }
-
-    .hero-text {
-      text-align: center;
-    }
-
-    .hero-text h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero-text p {
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-image {
-      margin-top: 2rem;
-    }
-
-    .hero-image img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    .services, .about, .cta, .process {
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    .services h3, .about h3, .cta h3, .process h3 {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    }
-
-    .about img {
-      border-radius: 100%;
-      max-width: 200px;
-      margin: 2rem auto;
-    }
-
-    .cta {
-      background-color: #fff0e6;
-      border-radius: 12px;
-    }
-
-    .process-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .step {
-      max-width: 100%;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #f7f7f7;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    @media (min-width: 768px) {
-      header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-      }
-
-      nav ul {
-        flex-direction: row;
-        gap: 1.5rem;
-      }
-
-      .hero {
-        flex-direction: row;
-        padding: 4rem 2rem;
-      }
-
-      .hero-text {
-        flex: 1;
-        text-align: left;
-        padding-right: 2rem;
-      }
-
-      .hero-image {
-        flex: 1;
-        margin-top: 0;
-      }
-
-      .cards {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      }
-
-      .process-steps {
-        flex-direction: row;
-        justify-content: center;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Consultino</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="btn-primary">Book Appointment</button>
-  </header>
-
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h2>Discover The Secret Of Successful Life</h2>
-      <p>Learn how to overcome challenges and build a better version of yourself with professional life coaching.</p>
-      <button class="btn-primary">Get Free Ebook</button>
-    </div>
-    <div class="hero-image">
-      <img src="https://via.placeholder.com/400x400" alt="Coach Hero Image" />
+  <!-- Articles -->
+  <section class="articles" id="articulos">
+    <div class="articles__container">
+      <!-- Post 1 -->
+      <article class="post">
+        <img src="https://images.unsplash.com/photo-1564758866812-963e2e181368?auto=format&fit=crop&w=400&q=60" alt="Artículo 1" />
+        <div class="post__content">
+          <h3 class="post__title">Aal Binoq</h3>
+          <p class="post__meta">01 Jul 2025 • 5 min lectura</p>
+          <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, delectus!</p>
+          <a href="#" class="btn btn--outline">Leer más</a>
+        </div>
+      </article>
+      <!-- Post 2 -->
+      <article class="post">
+        <img src="https://images.unsplash.com/photo-1518131677734-da3ab7d1e3f9?auto=format&fit=crop&w=400&q=60" alt="Artículo 2" />
+        <div class="post__content">
+          <h3 class="post__title">Wfhes Souile Efuttill</h3>
+          <p class="post__meta">25 Jun 2025 • 3 min lectura</p>
+          <p class="post__text">Repellendus maiores iure quod eum, cum est! Maiores iure consequatur.</p>
+          <a href="#" class="btn btn--outline">Leer más</a>
+        </div>
+      </article>
+      <!-- Post 3 -->
+      <article class="post">
+        <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=400&q=60" alt="Artículo 3" />
+        <div class="post__content">
+          <h3 class="post__title">Whoy Eot Sed Lofi</h3>
+          <p class="post__meta">10 Jun 2025 • 4 min lectura</p>
+          <p class="post__text">Consequuntur delectus ipsam pariatur, adipisci eligendi velit reprehenderit exercitationem.</p>
+          <a href="#" class="btn btn--outline">Leer más</a>
+        </div>
+      </article>
     </div>
   </section>
 
-  <section class="services" id="services">
-    <h3>How Can I Help You</h3>
-    <div class="cards">
-      <div class="card">Group Coaching</div>
-      <div class="card">Online Sessions</div>
-      <div class="card">Consulting Session</div>
-      <div class="card">Build Confidence</div>
-    </div>
+  <!-- Contact -->
+  <section class="contact" id="contacto">
+    <h2 class="contact__title">Contáctanos</h2>
+    <form class="contact__form" action="mailto:info@mosaabogadosgt.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Nombre completo" required />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
+      <button type="submit" class="btn btn--primary">Enviar</button>
+    </form>
+    <p style="margin-top:1rem;">Teléfono: <a href="tel:+50242151305">+502 4215 1305</a></p>
   </section>
-
-  <section class="about" id="about">
-    <h3>Hi, I'm Rose William</h3>
-    <p>Your Personal Life Coach & Health Advisor. Helping you transform your life through emotional and physical healing.</p>
-    <img src="https://via.placeholder.com/200" alt="Rose William" />
-    <p><strong>15+ Years of Experience</strong></p>
-    <div class="cards">
-      <div class="card">Emotional Healing</div>
-      <div class="card">Physical Healing</div>
-    </div>
-    <button class="btn-primary" style="margin-top: 1rem;">Discover More</button>
-  </section>
-
-  <section class="cta">
-    <h3>Working Together For Your Better Life!</h3>
-    <p>Download my free eBook to start your journey of healing and growth today.</p>
-    <button class="btn-primary">Get Started</button>
-  </section>
-
-  <section class="process">
-    <h3>Let's Work Together</h3>
-    <div class="process-steps">
-      <div class="step">
-        <h4>Step 1</h4>
-        <p>Initial Discovery Call</p>
-      </div>
-      <div class="step">
-        <h4>Step 2</h4>
-        <p>Custom Coaching Plan</p>
-      </div>
-      <div class="step">
-        <h4>Step 3</h4>
-        <p>Ongoing Support & Growth</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Consultino. All rights reserved.
-  </footer>
-
-  <script>
-    // Scroll fade-in animations
-    document.querySelectorAll('section').forEach(section => {
-      section.style.opacity = 0;
-      section.style.transition = 'opacity 0.8s ease-out';
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-          }
-        });
-      }, { threshold: 0.1 });
-      observer.observe(section);
-    });
-  </script>
-</body>
-
-</html>
