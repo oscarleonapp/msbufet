@@ -194,11 +194,15 @@
     }
 
     /* ---------------- About ---------------- */
-    .about {
-      padding: 5rem 0;
-      text-align: center;
-    }
-
+.about {
+  text-align: center;
+  padding: 2rem;
+  background-color: #132b1e;
+}
+.about__logo {
+  display: block;
+  margin: 0 auto 1rem auto;
+}
     .about__title {
       font-family: 'Playfair Display', serif;
       font-size: 2rem;
@@ -227,7 +231,7 @@
 
     /* ---------------- Services ---------------- */
     .services {
-      background: var(--dark-2);
+      background: var(--white);
       padding: 6rem 0 5rem;
       text-align: center;
     }
@@ -235,7 +239,7 @@
     .services__title {
       font-family: 'Playfair Display', serif;
       font-size: 2rem;
-      color: var(--gold);
+      color: var(--dark);
       margin-bottom: 3rem;
       position: relative;
       display: inline-block;
@@ -246,7 +250,7 @@
       position: absolute;
       width: 80%;
       height: 1px;
-      background: var(--gold);
+      background: var(--dark);
       left: 10%;
       bottom: -10px;
       opacity: 0.3;
@@ -472,14 +476,15 @@
 </section>
 
   <!-- About -->
-  <section class="about" id="sobre">
-    <h2 class="about__title">¿Quiénes Somos?</h2>
-    <p class="about__text">
-      En  Monterroso Sayle & Asociados contamos con más de 25 años de
-      experiencia brindando asesoría legal integral en Guatemala. Nuestro
-      compromiso es ofrecer un servicio ético y profesional a cada cliente.
-    </p>
-  </section>
+<section class="about" id="sobre">
+  <img src="assets/img/512x512-logo.png" alt="Logo" width="200" height="200" class="about__logo">
+  <h2 class="about__title">¿Quiénes Somos?</h2>
+  <p class="about__text">
+    En Monterroso Sayle & Asociados contamos con más de 25 años de
+    experiencia brindando asesoría legal integral en Guatemala. Nuestro
+    compromiso es ofrecer un servicio ético y profesional a cada cliente.
+  </p>
+</section>
 
   <!-- Services -->
   <section class="services" id="servicios">
