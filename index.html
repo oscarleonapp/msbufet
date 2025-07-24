@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Monterroso Sayle & Asociados - Protegemos tus derechos en Guatemala</title>
+  <title>Monterroso Morales Sayle & Asociados - Protegemos tus derechos en Guatemala</title>
   <!-- OPEN GRAPH PARA COMPARTIR EN REDES -->
-  <meta property="og:title" content=" Monterroso Sayle & Asociados">
+  <meta property="og:title" content=" Monterroso Morales Sayle & Asociados">
   <meta property="og:description" content="Servicios legales de alta calidad, defensa del contribuyente, propiedad intelectual y más.">
   <meta property="og:image" content="https://mosaabogadosgt.com/assets/img/1200x630-index.png">
   <meta property="og:url" content="https://mosaabogadosgt.com/">
   <meta property="og:type" content="website">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-somehash" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     :root {
@@ -53,7 +54,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: #132b1e;
+      background: #21372b;
       backdrop-filter: blur(8px);
       border-bottom: 1px solid rgba(197, 163, 105, 0.15);
       z-index: 999;
@@ -70,7 +71,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 1rem 0;
-      background-color: #132b1e;
+      background-color: #21372b;
     }
 
     .nav__brand {
@@ -197,7 +198,7 @@
 .about {
   text-align: center;
   padding: 2rem;
-  background-color: #132b1e;
+  background-color: #21372b;
 }
 .about__logo {
   display: block;
@@ -429,6 +430,35 @@
         display: flex;
       }
     }
+    /* Botón WhatsApp en navbar */
+.btn-whatsapp {
+  background-color: #ffffff;
+  color: #25D366;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  /* gap: 0.5rem; */
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-whatsapp i {
+  font-size: 1rem;
+}
+
+/* Animación de pulsación */
+.btn-whatsapp:active {
+  transform: scale(0.95);
+}
+
+/* Hover accesible */
+.btn-whatsapp:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
   </style>
 </head>
 <body>
@@ -438,14 +468,24 @@
       <a href="#" class="nav__brand">
         <!-- You can replace the placeholder with your SVG / PNG logo  -->
          <img src="assets/img/512x512-solo-logo.png" alt="" width="40" height="40">
-        <span> Monterroso Sayle & Asociados</span>
+        <span> Monterroso Morales Sayle & Asociados</span>
       </a>
       <ul class="nav__links" id="navLinks">
         <li><a href="#">Inicio</a></li>
         <li><a href="#sobre">Sobre Nosotros</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#articulos">Artículos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+<li>Tel: 23380330</li>
+
+        <!-- <li><a href="#articulos">Artículos</a></li> -->
+<li>
+  <a href="https://api.whatsapp.com/send?phone=50242151305" 
+     target="_blank" 
+     rel="noopener" 
+     class="btn-whatsapp">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+</li>
+
       </ul>
       <div class="hamburger" id="hamburger">
         <span></span>
@@ -480,10 +520,11 @@
   <img src="assets/img/512x512-logo.png" alt="Logo" width="200" height="200" class="about__logo">
   <h2 class="about__title">¿Quiénes Somos?</h2>
   <p class="about__text">
-    En Monterroso Sayle & Asociados contamos con más de 25 años de
+    En Monterroso Morales Sayle & Asociados contamos con más de 25 años de
     experiencia brindando asesoría legal integral en Guatemala. Nuestro
     compromiso es ofrecer un servicio ético y profesional a cada cliente.
   </p>
+  <p class="about__text">Estamos ubicados en 12 calle 1-25 zona 10 Edificio Géminis, 3 nivel oficina 312</p>
 </section>
 
   <!-- Services -->
@@ -601,7 +642,8 @@
 
   <!-- Footer -->
   <footer id="pie">
-    &copy; 2025  Monterroso Sayle & Asociados. Todos los derechos reservados.
+    &copy; 2025  Monterroso Morales Sayle & Asociados. Todos los derechos reservados. <br>
+    12 calle 1-25 zona 10 Edificio Géminis, 3 nivel oficina 312
     <p>Desarrollado por <a href="https://oscarleon.app" target="_blank" rel="noopener">OSCARLEON</a></p>
   </footer>
 
